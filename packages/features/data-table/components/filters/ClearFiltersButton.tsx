@@ -1,6 +1,10 @@
-import { useDataTable } from "@calcom/features/data-table";
+"use client";
+
+// eslint-disable-next-line no-restricted-imports
 import { useLocale } from "@calcom/lib/hooks/useLocale";
 import { Icon, Button, Tooltip } from "@calcom/ui";
+
+import { useDataTable } from "../../hooks";
 
 export const ClearFiltersButton = () => {
   const { t } = useLocale();
